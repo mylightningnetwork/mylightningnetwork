@@ -21,7 +21,7 @@ assetDir = "static/assets"
 [module.hugoVersion]
 extended = true
 min = "0.101.0"
-timeout = "600s"
+timeout = "300s"
 disableKinds = ["section"]
 
 # disqus
