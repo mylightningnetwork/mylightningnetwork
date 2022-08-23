@@ -1,0 +1,200 @@
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    {{- if eq .RelPermalink "/" -}}
+      {{ site.Title }}
+    {{- else if or (eq .Section "tags") (eq .Section "category") -}}
+      {{- .Title | humanize }} |
+      {{- printf " %s" site.Title }}
+    {{- else -}}
+      {{- .Title }} |
+      {{- printf " %s" site.Title }}
+    {{- end -}}
+  </title>
+
+  <!-- meta canonical -->
+  <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+
+  <!-- responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- meta keywords -->
+  {{- $description:= site.Params.metadata.description -}}
+  {{- $keyword:= site.Params.metadata.keywords -}}
+  {{- if .Params.seo_keyword -}}
+    <meta
+      name="keywords"
+      content="{{- if eq .RelPermalink "/" -}}
+        {{ delimit $keyword `, ` }},
+      {{- end -}}{{ delimit .Params.seo_keyword `, ` }}"
+    />
+  {{ end -}}
+
+
+  <!-- meta description -->
+  {{- if .Params.seo_description -}}
+    <meta
+      name="description"
+      content="{{- if eq .RelPermalink "/" -}}
+        {{ $description }}
+      {{ end -}}{{ .Params.seo_description }}"
+    />
+  {{ end -}}
+
+
+  <!-- meta author -->
+  {{- with site.Params.metadata.author }}
+    <meta name="author" content="{{ . }}" />
+  {{ end -}}
+
+
+  <!-- meta hugo version -->
+  {{- hugo.Generator }}
+  <!-- SEO meta -->
+  <!-- opengraph -->
+  <meta
+    property="og:title"
+    content="{{- with .Title -}}
+      {{ . }} |
+      {{- printf " %s" site.Title }}
+    {{- else }}
+      {{ site.Title }}
+    {{ end -}}"
+  />
+  <meta
+    property="og:description"
+    content="{{- with .Params.seo_description -}}
+      {{ . }}
+    {{- else }}
+      {{- if .IsPage -}}
+        {{ .Summary }}
+      {{- else }}
+        {{- with $description }}{{ . }}{{ end -}}
+      {{ end -}}
+    {{ end -}}"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <!-- twitter -->
+  <meta
+    name="twitter:title"
+    content="{{- with .Title -}}
+      {{ . }} |
+      {{- printf " %s" site.Title }}
+    {{- else }}
+      {{ site.Title }}
+    {{ end -}}"
+  />
+  <meta
+    name="twitter:description"
+    content="{{- with .Params.seo_description -}}
+      {{ . }}
+    {{- else }}
+      {{- if .IsPage -}}
+        {{ .Summary }}
+      {{- else }}
+        {{- with $description }}{{ . }}{{ end -}}
+      {{ end -}}
+    {{ end -}}"
+  />
+  {{- with site.Params.social.twitter }}
+    <meta name="twitter:site" content="@{{ . }}" />
+  {{ end -}}
+
+
+  <!-- meta image -->
+  {{- with .Params.thumbnail }}
+    {{- $imagePath := . -}}
+    {{- if or (hasPrefix $imagePath "http") (os.FileExists (add "static/assets/" (string $imagePath))) }}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="{{ $imagePath | absURL }}" />
+      <meta property="og:image" content="{{ $imagePath | absURL }}" />
+    {{- else }}
+      {{- $assetImage := os.FileExists (add "static/assets/" (string $imagePath)) -}}
+      {{- $image:= resources.Get $imagePath -}}
+      {{- if $assetImage }}
+        {{- $imageExt := path.Ext $imagePath -}}
+        {{- if ne $imageExt ".svg" }}
+          {{- $imageWidth := $image.Width -}}
+          {{- $imageHeight := $image.Height -}}
+          {{- if (and (gt $imageWidth 144) (gt $imageHeight 144)) }}
+            <meta
+              property="og:image"
+              content="{{ $image.RelPermalink | absURL }}"
+            />
+            <meta
+              property="og:image:secure_url"
+              content="{{ $image.RelPermalink | absURL }}"
+            />
+            <meta
+              name="twitter:image"
+              content="{{ $image.RelPermalink | absURL }}"
+            />
+            <meta
+              name="twitter:card"
+              content="summary{{- if (and (gt $imageWidth 300) (gt $imageHeight 157) (not (eq $imageWidth $imageHeight))) -}}
+                _large_image
+              {{- end -}}"
+            />
+          {{ end }}
+          <meta property="og:image:width" content="{{ $imageWidth }}" />
+          <meta property="og:image:height" content="{{ $imageHeight }}" />
+        {{ end -}}
+      {{ end -}}
+    {{ end -}}
+  {{ end -}}  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "description": "Reporting &amp; Educating about Lightning Network",
+      "headline": "Home",
+      "name": "myLightning.Network",
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mylightning.network/assets/images/logo.png"
+        }
+      },
+      "url": "https://mylightning.network/"
+    }
+  </script>
+
+<!-- favicon -->
+{{- partial "images-favicon.html" . -}}
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Google Fonts-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Lora:400,400i,700"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Modified -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+  <!-- Theme Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+
+  <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- This goes before </head> closing tag, Google Analytics can be placed here -->
+</head>

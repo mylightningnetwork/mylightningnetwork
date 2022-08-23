@@ -1,0 +1,37 @@
+{{- define "main" }}
+
+  <!-- Content -->
+  <main role="main" class="site-content">
+    <div class="container">
+      <h3 class="font-weight-bold spanborder"><span>All Stories</span></h3>
+      <div class="page-content">
+        <ol class="list-featured">
+          {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}
+          {{- range $paginator.Pages }}
+            <li class="mb-4">
+              <span>
+                <h6 class="font-weight-bold">
+                  <p class="text-dark">{{ .Title }}</p>
+                </h6>
+                <audio controls="" preload="metadata">
+                  <source src="{{ .Params.audio_url }}" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+                <p class="text-muted">{{ .Date | time.Format ":date_long" }}</p>
+              </span>
+            </li>
+          {{- else }}
+            <div class="my-5 ml-5">
+              <span>No Stories</span>
+            </div>
+          {{ end -}}
+        </ol>
+        <div class="my-5">
+          {{ template "_internal/pagination.html" . }}
+        </div>
+
+        <!-- Comments -->
+      </div>
+    </div>
+  </main>
+{{ end -}}

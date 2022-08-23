@@ -1,0 +1,22 @@
+{{- if fileExists (add `static/assets/` .Destination) }}
+  {{- $img := resources.Get .Destination }}
+  {{- $imgResize := $img.Resize "720x webp" }}
+  <div class="d-flex justify-content-center align-items-center">
+    <figure
+      class="d-flex flex-column justify-content-center align-items-center mx-auto"
+    >
+      <a href="{{ $img.Permalink | safeURL }}" target="_blank">
+        <img
+          src="{{ $imgResize.Permalink | safeURL }}"
+          class="img-fluid mb-2"
+          alt="{{ .Title | safeHTML }}"
+        />
+      </a>
+      {{- with .Text }}
+        <figcaption class="text-center">
+          <small>{{ . | safeHTML }}</small>
+        </figcaption>
+      {{ end -}}
+    </figure>
+  </div>
+{{ end -}}

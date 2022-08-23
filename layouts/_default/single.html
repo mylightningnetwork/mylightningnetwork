@@ -1,0 +1,12 @@
+{{- define "main" }}
+
+  <!-- Content -->
+  <main role="main" class="site-content">
+    <div class="container">
+      <h3 class="font-weight-bold spanborder"><span>{{ .Title }}</span></h3>
+      <div class="page-content">
+        {{ .Content | safeHTML }}
+      </div>
+    </div>
+  </main>
+{{ end -}}

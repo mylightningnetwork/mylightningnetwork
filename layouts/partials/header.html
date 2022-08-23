@@ -1,0 +1,107 @@
+<!-- Navbar -->
+<nav
+  id="MagicMenu"
+  class="topnav navbar navbar-expand-lg navbar-light fixed-top bg-white"
+>
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/images/mylogo.png" alt="myLightning.Network" />
+    </a>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarColor02"
+      aria-controls="navbarColor02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarColor02">
+      <ul class="navbar-nav d-flex align-items-center mr-auto">
+        {{- range site.Menus.main }}
+          <li class="nav-item">
+            <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+          </li>
+        {{ end -}}
+      </ul>
+      <ul class="social-nav navbar-nav d-flex align-items-center ml-auto">
+        <div class="d-flex mb-4 mb-md-0">
+          {{- with site.Params.github }}
+            <li>
+              <a href="{{ . }}">
+                <img
+                  src="/assets/images/icons/github.png"
+                  width="24px"
+                  height="24px"
+                  alt="github"
+                />
+              </a>
+            </li>
+          {{ end -}}
+
+          {{- with site.Params.twitter }}
+            <li>
+              <a href="{{ . }}">
+                <img
+                  src="/assets/images/icons/twitter.png"
+                  width="24px"
+                  height="24px"
+                  alt="github"
+                />
+              </a>
+            </li>
+          {{ end -}}
+
+          {{- with site.Params.youtube }}
+            <li>
+              <a href="{{ . }}">
+                <img
+                  src="/assets/images/icons/youtube.png"
+                  width="24px"
+                  height="24px"
+                  alt="github"
+                />
+              </a>
+            </li>
+          {{ end -}}
+        </div>
+        <style>
+          .lunrsearchresult .title {
+            color: #d9230f;
+          }
+          .lunrsearchresult .url {
+            color: silver;
+          }
+          .lunrsearchresult a {
+            display: block;
+            color: #777;
+          }
+          .lunrsearchresult a:hover,
+          .lunrsearchresult a:focus {
+            text-decoration: none;
+          }
+          .lunrsearchresult a:hover .title {
+            text-decoration: underline;
+          }
+        </style>
+
+        <form class="bd-search hidden-sm-down" action="/search/" method="GET">
+          <input
+            type="text"
+            class="form-control text-small"
+            name="q"
+            value=""
+            placeholder="Type keyword and enter..."
+          />
+        </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Search Results -->
+<div id="lunrsearchresults">
+  <ul class="mb-0"></ul>
+</div>

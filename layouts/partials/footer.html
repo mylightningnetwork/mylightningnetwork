@@ -1,0 +1,49 @@
+<!-- Scripts: popper, bootstrap, theme, fuse -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"
+></script>
+
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"
+></script>
+
+<!-- Fuse JS with statically -->
+<script
+  src="https://cdn.statically.io/gh/krisk/Fuse/master/dist/fuse.basic.min.js"
+  async
+  defer
+></script>
+
+<script src="/assets/js/theme.js"></script>
+
+<!-- Footer -->
+<footer class="border-top text-muted small bg-white p-3">
+  <div class="container">
+    <div class="d-flex justify-content-center justify-content-xl-start align-items-center">
+      <img
+        class="img-fluid"
+        src="/assets/images/logo_footer.jpg"
+        alt="{{ site.Params.site_name }}"
+        width="120"
+        height="auto"
+      />
+    </div>
+    <div class="row align-items-center justify-content-between">
+      <div>
+        <span class="navbar-brand mr-2 mb-0" style="text-transform: lowercase"
+          ><strong>{{ site.Params.site_name }}</strong></span
+        >
+        <span
+          >Copyright ©
+          {{ now.Year }}
+          .
+        </span>
+      </div>
+      <div>{{ site.Params.motto }}</div>
+    </div>
+  </div>
+</footer>
