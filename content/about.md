@@ -10,20 +10,11 @@ thumbnail: "posts/example.jpg"
 slug: "about"
 formspree: "mpzbpgww"
 ---
+At mylightning. network, self-custodial investing with bitcoin is the future. Lightning network capital markets enable this unique feature of investing, lending and borrowing without trusting your funds with counterparty risk. The history of money is being rewritten by big governments using Central Bank Digital Currencies (CBDC's); therefore, it will be vital for investors to comprehend the insights and analytics with the money you can own, the money you can spend without a third-party risk.
 
-Elit molestias non ex ut iure, nemo? Totam ea non nam neque corporis! Explicabo
-numquam!
+We present Lightning Capital Markets Insights and Analytics from  Game theoretical respective to make knowledgeable investment decisions. 
 
-Dolor reprehenderit quidem a elit sequi? Ipsam quaerat nostrum vitae inventore
-explicabo! Inventore dolores molestiae reprehenderit dolorum repellat? Fugiat
-placeat iste laborum labore nostrum. Consectetur nobis esse illum beatae illum
-Culpa porro commodi tempore molestias aliquid? Ut libero dignissimos
-consequuntur doloremque sit! Voluptatem impedit incidunt doloribus rem facere
-odio, alias
-
-Dolor esse sint voluptatum sequi harum? Voluptatum quaerat velit deserunt
-quidem minima adipisci Veniam nostrum voluptatibus placeat in laboriosam. Cum
-quod ducimus quos asperiores ut.
+We welcome you to join our journey with us !! 
 
 <form action="https://formspree.io/f/{{< param formspree >}}" method="POST">
 <p class="mb-4">Please send your message to myLightning.Network. We will reply as soon as possible!</p>
