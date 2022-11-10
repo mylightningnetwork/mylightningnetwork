@@ -1,22 +1,25 @@
 ---
-title: "Some Game Theory"
-date: 2022-08-20T22:33:41+07:00
+title: "Episode 1: Welcome to mylightning.network!"
+date: 2022-11-09T12:28:50+07:00
 draft: false
 seo_description: ""
 seo_keyword:
-  - keyword1
-  - keyword2
-thumbnail: "2.jpg"
-youtube_url: "https://www.youtube.com/watch?v=D0UnqGm_miA"
-audio_url: "/assets/audios/file.mp3"
+  - bitcoin
+  - lightning
+thumbnail: "posts/ActiveLightningcapitalmarkets.png"
+youtube_url: "https://youtu.be/hBGe_Ho-B_o"
+audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
-  - tags1
-  - tags2
+  - Welcome
 category:
-  - Game Theory
-slug: "gametheory-2"
+  - Podcast
+slug: "welcometoln"
 ---
 
-Sit cum minus odio ipsum sit Sed accusantium obcaecati quisquam repellat neque
-reprehenderit? Expedita deserunt illo eaque odit fugiat. Reprehenderit non odio
-facilis provident in
+Hey everybody, welcome to your lightning network magazine, where we discuss the
+ - trends
+ - applications &
+ - analytics              
+We cover the aspects like nobody does it better!
+
+We are excited to start this journey with you & So Welcome!
