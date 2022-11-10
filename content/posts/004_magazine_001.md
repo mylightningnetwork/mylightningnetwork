@@ -1,29 +1,25 @@
 ---
-title: "Some Magazine"
-date: 2022-08-18T19:23:39+07:00
+title: "Episode 1: Welcome to mylightning.network!"
+date: 2022-11-09T12:28:50+07:00
 draft: false
 seo_description: ""
 seo_keyword:
-  - keyword1
-  - keyword2
-thumbnail: "magazine/1.jpg"
-youtube_url: "https://www.youtube.com/watch?v=D0UnqGm_miA"
-audio_url: ""
+  - bitcoin
+  - lightning
+thumbnail: "posts/ActiveLightningcapitalmarkets.png"
+youtube_url: "https://youtu.be/hBGe_Ho-B_o"
+audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
-  - tags1
-  - tags2
+  - Welcome
 category:
-  - Magazine
-slug: "some-magazine"
+  - Podcast
+slug: "welcometoln"
 ---
 
-Sit magnam optio quisquam fugiat eius. Quibusdam praesentium placeat illum eos
-aperiam sunt. Magnam cupiditate repellat dolorum ipsa repellat dolorum saepe
-Eveniet omnis debitis quos animi reprehenderit! Totam ullam nemo odit expedita
-assumenda dicta cumque? Doloribus voluptate aperiam nesciunt reiciendis
-pariatur assumenda! At voluptas unde unde laborum incidunt! Id dolor
+Hey everybody, welcome to your lightning network magazine, where we discuss the
+ - trends
+ - applications &
+ - analytics              
+We cover the aspects like nobody does it better!
 
-Quasi fugiat culpa ut
-recusandae beatae Repellendus architecto a id cum recusandae harum Sunt ullam
-ipsam doloribus reprehenderit itaque, accusantium. Ipsa tempore excepturi
-voluptatem eveniet repellat Minima explicabo
+We are excited to start this journey with you & So Welcome!
