@@ -1,38 +1,25 @@
 ---
-title: "Some Podcast"
-date: 2022-08-18T19:23:39+07:00
+title: "Episode 1: Welcome to mylightning.network!"
+date: 2022-11-09T12:28:50+07:00
 draft: false
 seo_description: ""
 seo_keyword:
-  - keyword1
-  - keyword2
-thumbnail: "banner_image_1.png"
-youtube_url: "https://www.youtube.com/watch?v=D0UnqGm_miA"
-audio_url: "/assets/audios/episode1.mp3"
+  - bitcoin
+  - lightning
+thumbnail: "posts/ActiveLightningcapitalmarkets.png"
+youtube_url: "https://youtu.be/hBGe_Ho-B_o"
+audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
-  - tags1
-  - tags2
+  - Welcome
 category:
   - Podcast
-slug: "podcast-1"
+slug: "welcometoln"
 ---
 
-Consectetur maxime iure laboriosam odio voluptas, alias Iure distinctio ipsum
-eveniet fuga incidunt. Sint quasi consequatur voluptatibus fugit quo Aliquid
-cum magnam facilis aliquid enim voluptatem? Nemo nam vitae est consectetur
-dolore Consectetur aliquid ea quod ex cumque. Earum culpa laudantium aspernatur
-explicabo saepe, ducimus. Labore vero dolores ratione omnis voluptate.
+Hey everybody, welcome to your lightning network magazine, where we discuss the
+ - trends
+ - applications &
+ - analytics              
+We cover the aspects like nobody does it better!
 
-Voluptas
-tempore impedit dolores commodi itaque? Voluptatum corporis ipsam accusamus
-rerum neque, suscipit Nulla quidem ex rerum cum nostrum iure cumque voluptatum
-quam fuga est Doloremque sequi deleniti maiores cum iusto quas consequuntur?
-Asperiores sequi in doloremque nobis fugiat? Fugit aliquam deleniti nobis
-itaque accusantium, cumque? Magni dolor aperiam a consectetur qui Atque dolorem
-consectetur neque reiciendis amet Accusamus ullam debitis quas id porro?
-Incidunt quam quis incidunt magnam vero doloribus.
-
-Quasi fugiat culpa ut
-recusandae beatae Repellendus architecto a id cum recusandae harum Sunt ullam
-ipsam doloribus reprehenderit itaque, accusantium. Ipsa tempore excepturi
-voluptatem eveniet repellat Minima explicabo
+We are excited to start this journey with you & So Welcome!
