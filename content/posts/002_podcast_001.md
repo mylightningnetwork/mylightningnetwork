@@ -1,5 +1,5 @@
 ---
-title: "Episode 1: Welcome to mylightning.network!"
+title: "What are  Capital Markets ?"
 date: 2022-11-09T12:28:50+07:00
 draft: false
 seo_description: ""
@@ -7,7 +7,7 @@ seo_keyword:
   - bitcoin
   - lightning
 thumbnail: "posts/ActiveLightningcapitalmarkets.png"
-youtube_url: "https://youtu.be/hBGe_Ho-B_o"
+youtube_url: "https://youtu.be/g_3tMWYQIf4"
 audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
   - Welcome
