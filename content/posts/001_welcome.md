@@ -6,9 +6,9 @@ seo_description: ""
 seo_keyword:
   - bitcoin
   - lightning
-thumbnail: "posts/example.jpg"
-youtube_url: "https://youtu.be/ZEBUP-Pqk7U"
-audio_url: "/assets/audios/file.mp3"
+thumbnail: "posts/ActiveLightningcapitalmarkets.png"
+youtube_url: "https://youtu.be/hBGe_Ho-B_o"
+audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
   - Welcome
 category:
