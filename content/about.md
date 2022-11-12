@@ -10,9 +10,9 @@ thumbnail: "posts/example.jpg"
 slug: "about"
 formspree: "mpzbpgww"
 ---
-At mylightning. network, self-custodial investing with bitcoin is the future. Lightning network capital markets enable this unique feature of investing, lending and borrowing without trusting your funds with counterparty risk. The history of money is being rewritten by big governments using Central Bank Digital Currencies (CBDC's); therefore, it will be vital for investors to comprehend the insights and analytics with the money you can own, the money you can spend without a third-party risk.
+At mylightning. network, we believe self-custodial investing with bitcoin is the future. Lightning network capital markets enable this unique feature of investing, lending and borrowing without trusting your funds with counterparty risk. The history of money is being rewritten by big governments using Central Bank Digital Currencies (CBDC's); therefore, it will be vital for investors to comprehend the insights and analytics with the money you can own, the money you can invest and earn without a centralized mediator inbetween.
 
-We present Lightning Capital Markets Insights and Analytics from  Game theoretical respective to make knowledgeable investment decisions. 
+We present Lightning Capital Markets Insights and Analytics from  Game theoretical perspective respective to make your knowledgeable investment decisions while lending or bitcoin in non-custodial fashion.
 
 We welcome you to join our journey with us !! 
 
