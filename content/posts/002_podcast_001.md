@@ -10,9 +10,9 @@ thumbnail: "posts/ActiveLightningcapitalmarkets.png"
 youtube_url: "https://youtu.be/g_3tMWYQIf4"
 audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
-  - Welcome
+  - CapitalMarkets
 category:
-  - Podcast
+  - Magazine
 slug: "welcometoln"
 ---
 
