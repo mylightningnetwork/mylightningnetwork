@@ -12,8 +12,9 @@ audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
   - Welcome
 category:
-  - Gametheory
-slug: "welcometoln"
+  - Magazine
+  - Podcast
+slug: "gametheory"
 ---
 
 Hey everybody, welcome to your lightning network magazine, where we discuss the
