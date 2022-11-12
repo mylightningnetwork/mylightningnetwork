@@ -84,6 +84,6 @@ url = "/magazine"
 weight = 3
 
 [[menu.main]]
-name = "Game Theory"
+name = "Money & Game Theory"
 url = "/gametheory"
 weight = 4
