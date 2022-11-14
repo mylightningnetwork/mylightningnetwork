@@ -27,6 +27,7 @@ disableKinds = ["section"]
 # disqus
 disqusShortname = 'yourDisqusShortname'
 
+
 [markup]
   defaultMarkdownHandler = "goldmark"
 
