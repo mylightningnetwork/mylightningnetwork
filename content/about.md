@@ -16,7 +16,7 @@ We present Lightning Capital Markets Insights and Analytics through lens of Game
 
 We welcome you to join our journey with us !! 
 
-<form action="https://formspree.io/f/{{< param formspree >}}" method="POST">
+<form action="https://formspree.io/f/xaykvjln" method="POST">
 <p class="mb-4">Please send your message to myLightning.network. We will reply as soon as possible!</p>
 <div class="form-group row">
 <div class="col-md-6">
