@@ -85,6 +85,11 @@ url = "/cbdcs_gametheory"
 weight = 3
 
 [[menu.main]]
-name = "Join"
-url = "/join"
+name = "Podcasts
+url = "/podcasts"
 weight = 4
+
+[[menu.main]]
+name = "Join Network"
+url = "/join"
+weight = 5
