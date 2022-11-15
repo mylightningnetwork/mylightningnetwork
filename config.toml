@@ -75,12 +75,12 @@ url = "/about"
 weight = 1
 
 [[menu.main]]
-name = "Lightning Capital Markets"
+name = "Markets"
 url = "/"
 weight = 2
 
 [[menu.main]]
-name = "CBDCs & Game Theory"
+name = "CBDCs-Game Theory"
 url = "/cbdcs_gametheory"
 weight = 3
 
