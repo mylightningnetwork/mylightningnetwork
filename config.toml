@@ -79,8 +79,12 @@ name = "Lightning Markets"
 url = "/"
 weight = 2
 
+[[menu.main]]
+name = "CBDCs & Game-Theory"
+url = "/cbdc_gametheory"
+weight = 3
 
 [[menu.main]]
 name = "Join Network"
 url = "/join"
-weight = 3
+weight = 4
