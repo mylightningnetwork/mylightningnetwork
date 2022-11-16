@@ -52,7 +52,7 @@ disqusShortname = 'yourDisqusShortname'
   author_pic = "/assets/images/avatar1.jpg"
   author_bio = "Hi, I am RC, the curator of mylightning.network, explaining the money game ecosystem, rules and players involved. I hope you like it!"
   site_name = "myLightning.Network"
-  description = "Unlearning Money & Reporting Lightning Capital Markets and Insights"
+  #description = "Unlearning Money & Reporting Lightning Capital Markets and Insights"
   motto = "Lightning Network Capital Markets Insights and Analytics"
   locale = "en-US"
   type = "website"
@@ -81,7 +81,7 @@ weight = 2
 
 [[menu.main]]
 name = "CBDCs & Game Theory"
-url = "/gametheory"
+url = "/cbdcs_gametheory"
 weight = 3
 
 [[menu.main]]
