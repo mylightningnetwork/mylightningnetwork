@@ -12,7 +12,7 @@ audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
   - Welcome
 category:
-  - News
+  - Magazine
 slug: "welcometoln"
 ---
 
