@@ -1,6 +1,6 @@
 ---
-title: "Episode 1: Welcome to mylightning.network!"
-date: 2022-11-09T12:28:50+07:00
+title: "Episode 1:Road to CBDCs"
+date: 2022-11-14T17:28:50+07:00
 draft: false
 seo_description: ""
 seo_keyword:
@@ -10,11 +10,11 @@ thumbnail: "posts/ActiveLightningcapitalmarkets.png"
 youtube_url: "https://youtu.be/hBGe_Ho-B_o"
 audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
-  - Welcome
+  - tags1
+  - tags2
 category:
-  - Podcast
-slug: "welcometoln"
----
+  - Game Theory
+slug: "gametheory-1"
 
 Hey everybody, welcome to your lightning network magazine, where we discuss the
  - trends
