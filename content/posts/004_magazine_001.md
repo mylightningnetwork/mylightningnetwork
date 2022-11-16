@@ -1,5 +1,5 @@
 ---
-title: "CBDCs and Gametheory"
+title: "Money [EP02]: CBDCs and Gametheory"
 date: 2022-11-10T12:28:50+07:00
 draft: false
 seo_description: ""
@@ -12,7 +12,7 @@ audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
   - Welcome
 category:
-  - Podcast
+  - Magazine
 slug: "welcometoln"
 ---
 
