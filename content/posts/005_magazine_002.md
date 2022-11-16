@@ -1,6 +1,6 @@
 ---
-title: "Episode 1: Welcome to mylightning.network!"
-date: 2022-11-09T12:28:50+07:00
+title: "Markets [EP01] : Welcome to mylightning.network!"
+date: 2022-11-04T12:28:50+07:00
 draft: false
 seo_description: ""
 seo_keyword:
