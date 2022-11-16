@@ -84,10 +84,6 @@ name = "CBDCs & Game Theory"
 url = "/cbdcs_gametheory"
 weight = 3
 
-[[menu.main]]
-name = "Podcasts
-url = "/pods"
-weight = 4
 
 [[menu.main]]
 name = "Join Network"
