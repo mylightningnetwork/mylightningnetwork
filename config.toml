@@ -81,7 +81,7 @@ weight = 2
 
 [[menu.main]]
 name = "CBDCs & Game Theory"
-url = "/cbdcs_gametheory"
+url = "/"
 weight = 3
 
 [[menu.main]]
