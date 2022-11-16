@@ -12,7 +12,7 @@ audio_url: "/assets/audios/ActiveLightningCapitalMarkets.mp3"
 tags:
   - CapitalMarkets
 category:
-  - Magazine
+  - Podcasts
 slug: "welcometoln"
 ---
 
