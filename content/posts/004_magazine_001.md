@@ -1,6 +1,6 @@
 ---
 title: "Money [EP02]: CBDCs and Gametheory"
-date: 2022-11-10T12:28:50+07:00
+date: 2022-11-11T12:28:50+07:00
 draft: false
 seo_description: ""
 seo_keyword:
