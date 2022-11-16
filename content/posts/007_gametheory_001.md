@@ -15,6 +15,7 @@ tags:
 category:
   - Game Theory
 slug: "gametheory-1"
+---
 
 Hey everybody, welcome to your lightning network magazine, where we discuss the
  - trends
