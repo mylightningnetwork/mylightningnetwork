@@ -75,7 +75,7 @@ url = "/about"
 weight = 1
 
 [[menu.main]]
-name = "Markets"
+name = "Lightning Markets"
 url = "/"
 weight = 2
 
@@ -86,7 +86,7 @@ weight = 3
 
 [[menu.main]]
 name = "Podcasts
-url = "/podcasts"
+url = "/pods"
 weight = 4
 
 [[menu.main]]
