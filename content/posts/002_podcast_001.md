@@ -1,5 +1,5 @@
 ---
-title: "What are  Capital Markets?"
+title: "Markets [EP02]: What are  Capital Markets?"
 date: 2022-11-09T15:28:50+07:00
 draft: false
 seo_description: ""
