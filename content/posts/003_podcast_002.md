@@ -1,5 +1,5 @@
 ---
-title: "What are Lightning Capital Markets ?"
+title: "Markets [EP01] : What are Lightning Capital Markets ?"
 date: 2022-11-09T16:28:50+07:00
 draft: false
 seo_description: ""
