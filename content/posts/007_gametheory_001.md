@@ -1,5 +1,5 @@
 ---
-title: "Money [EP1] Road to CBDCs"
+title: "Money [EP01]: Road to CBDCs"
 date: 2022-11-14T17:28:50+07:00
 draft: false
 seo_description: ""
