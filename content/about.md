@@ -14,7 +14,7 @@ formspree: "mpzbpgww"
 
 mylightning.network began with a question.
 
-"Can you tell me to whom and where I should deposit my hard-earned bitcoins for a counterparty risk-free interest rate return?"
+"Can you tell me to when and where I should deposit my hard-earned bitcoins for a counterparty risk-free interest rate return?"
 
 It was 2017, and I was still working on my Ph.D. research on finding anomalous events at the University of Sydney. At that time, I came across a thing called bitcoin. My fellow researchers talked about bitcoin shooting to 25K USD, and people are becoming millionaires overnight.
 
