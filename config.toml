@@ -70,19 +70,19 @@ disqusShortname = 'yourDisqusShortname'
 # or relative path: /about
 
 [[menu.main]]
-name = "WHAT WE DO"
+name = "WHO WE ARE"
 url = "/about"
 weight = 1
 
 [[menu.main]]
-name = "Lightning Markets"
+name = "WHAT WE DO"
 url = "/"
 weight = 2
 
-[[menu.main]]
-name = "CBDCs & Game Theory"
-url = "/gametheory"
-weight = 3
+#[[menu.main]]
+#name = ""
+#url = "/gametheory"
+#weight = 3
 
 [[menu.main]]
 name = "Join Us"
