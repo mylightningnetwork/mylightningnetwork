@@ -87,4 +87,4 @@ weight = 3
 [[menu.main]]
 name = "HOW TO JOIN NETWORK"
 url = "/join"
-weight = 3
+weight = 4
