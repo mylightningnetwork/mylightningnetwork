@@ -79,10 +79,10 @@ name = "WHAT WE DO"
 url = "/"
 weight = 2
 
-#[[menu.main]]
-#name = ""
-#url = "/gametheory"
-#weight = 3
+[[menu.main]]
+name = ""
+url = "/gametheory"
+weight = 3
 
 [[menu.main]]
 name = "HOW TO JOIN NETWORK"
