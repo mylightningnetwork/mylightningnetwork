@@ -70,7 +70,7 @@ disqusShortname = 'yourDisqusShortname'
 # or relative path: /about
 
 [[menu.main]]
-name = "About"
+name = "WHAT WE DO"
 url = "/about"
 weight = 1
 
@@ -85,6 +85,6 @@ url = "/gametheory"
 weight = 3
 
 [[menu.main]]
-name = "Join Network"
+name = "WHY JOIN US"
 url = "/join"
 weight = 4
