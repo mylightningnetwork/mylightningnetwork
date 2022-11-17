@@ -85,6 +85,6 @@ url = "/gametheory"
 weight = 3
 
 [[menu.main]]
-name = "WHY JOIN US"
+name = "Join Us"
 url = "/join"
 weight = 4
