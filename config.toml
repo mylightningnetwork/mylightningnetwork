@@ -80,7 +80,7 @@ url = "/"
 weight = 2
 
 [[menu.main]]
-name = "CBDCs"
+name = "Game: CBDCs Vs Bitcoin"
 url = "/gametheory"
 weight = 3
 
