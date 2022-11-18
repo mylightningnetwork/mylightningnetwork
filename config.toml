@@ -80,11 +80,11 @@ url = "/"
 weight = 2
 
 [[menu.main]]
-name = "Game:CBDCs|Bitcoin"
+name = "Game: CBDCs Vs Bitcoin"
 url = "/gametheory"
 weight = 3
 
 [[menu.main]]
-name = "HOW TO JOIN"
+name = "HOW TO JOIN NETWORK"
 url = "/join"
 weight = 4
