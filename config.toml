@@ -1,7 +1,7 @@
 ####################
 # hugo
 ####################
-baseURL = "https://mylightning.network/"
+baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 title = "myLightning.Network"
