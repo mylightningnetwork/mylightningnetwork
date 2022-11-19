@@ -1,0 +1,130 @@
+{{- define "main" }}
+  <main role="main" class="site-content">
+    <div class="container pt-5">
+      <div class="jumbotron jumbotron-fluid jumbotron-home mb-2rem bg-lightblue position-relative mt-3 pt-0 pb-0">
+        <div class="h-100 tofront pl-4 pr-0">
+          <div class="row justify-content-between">
+            <div class="col-md-6 pr-lg-4 align-self-center pt-6 pb-6">
+              <h1 class="mb-3">Lorem ipsum dolor sit amet.</h1>
+              <p class="lead mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                ut arcu suscipit, tempus ante sed, dignissim lorem. Curabitur at
+                posuere.
+              </p>
+              <a href="/category/magazine" class="btn btn-dark">Magazine</a>
+            </div>
+            <div
+              class="col-md-6 d-none d-md-block pr-0"
+              style="background-size:cover;background-position: center;background-image:url(assets/images/lighting-network-02.webp);"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!--endif page url is / -->
+
+      <!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+
+      <div class="row mt-3">
+        <div class="col-md-8 main-loop">
+          <h4 class="font-weight-bold spanborder">
+            <span>All Stories</span>
+          </h4>
+
+          {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}
+          {{- range first 6 $paginator.Pages }}
+            <div>
+              <div class="d-flex justify-content-between main-loop-card mb-5">
+                <div class="pr-3">
+                  <h2 class="h4 font-weight-bold mb-1">
+                    <a class="text-dark" href="{{ .RelPermalink }}"
+                      >{{ .Title }}</a
+                    >
+                  </h2>
+                  <p class="excerpt">
+                    {{ .Summary }}
+                  </p>
+                  <small class="d-block text-muted">
+                    In
+                    <span class="catlist">
+                      {{- range $name := .Params.category }}
+                        <a
+                          class="text-capitalize text-muted smoothscroll"
+                          href="/category/{{ lower $name }}"
+                          >{{ $name }}</a
+                        ><span class="sep">, </span>
+                      {{ end -}}
+                    </span>
+                  </small>
+                  <small class="text-muted"
+                    >{{ .Date | time.Format ":date_long" }}</small
+                  >
+                </div>
+
+                <div class="col-md-3 pr-0 text-right">
+                  <a href="{{ .RelPermalink }}">
+                    <img
+                      class="w-100"
+                      src="/assets/images/{{ .Params.thumbnail }}"
+                      alt="{{ .Title }}"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          {{- else }}
+            <div class="my-5 ml-5">
+              <span>No Stories</span>
+            </div>
+          {{ end -}}
+
+
+          <div class="d-flex justify-content-center align-items-center mt-5">
+            <a href="{{ site.Params.youtube }}" class="btn btn-dark">Read More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          {{- partial "sidebar-featured.html" . -}}
+        </div>
+      </div>
+    </div>
+ <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+  <div class="container pt-4">
+    <div class="row remove-site-content-margin">
+    {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}
+    {{- range first 4 $paginator.Pages }}
+    <div class="col-md-6">
+      <div class="card border-0 mb-4 box-shadow">
+          <a href="{{ .RelPermalink }}">
+          <div class="topfirstimage" style="background-image: url({{- if .Params.thumbnail -}}/assets/images/{{- .Params.thumbnail -}}{{- end -}}); height: 200px;
+            background-size: cover; background-repeat: no-repeat;"></div>
+        </a>
+        <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+          <h2 class="h4 font-weight-bold">
+            <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          <p class="excerpt">
+            {{ .Summary | truncate 136 }}
+          </p>
+          <div>
+            <small class="d-block text-muted">
+              In <span class="catlist">
+                {{- range $name := .Params.category }}
+                <a class="text-capitalize text-muted smoothscroll"
+                  href="/category/{{ lower $name }}"
+                  >{{ $name }}</a
+                ><span class="sep">, </span>
+                {{ end -}}
+              </span>
+            </small>
+            <small class="text-muted">
+              {{ .Date | time.Format ":date_long" }}
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end -}}	
+  </main>
+{{ end -}}

@@ -7,7 +7,7 @@ seo_keyword:
   - keyword1
   - keyword2
 thumbnail: "posts/example.jpg"
-slug: "about"
+slug: "whatwedo"
 formspree: "mpzbpgww"
 ---
 

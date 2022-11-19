@@ -1,0 +1,56 @@
+<div class="sticky-top sticky-top-offset">
+  <h4 class="font-weight-bold spanborder"><span>Podcasts</span></h4>
+  <ol class="list-featured">
+    {{ $postsPodcast := where site.RegularPages "Section" "posts" }}
+    {{ $postsPodcast = where $postsPodcast "Params.category" "intersect" (slice "Podcast") }}
+    {{- range first 6 $postsPodcast }}
+      <li class="mb-4">
+        <a href="{{ .Params.youtube_url }}">
+          <span>
+            <h6 class="font-weight-bold">
+              <p class="text-dark">{{ .Title }}</p>
+            </h6>
+          </span>
+        </a>
+      </li>
+    {{ end -}}
+  </ol>
+  <p class="small text-center">
+    <a href="/category/podcast/">Show all episodes...</a>
+  </p>
+  {{- if site.Params.twitter }}
+            <div style="max-height: 560px; overflow-y: scroll">
+              <div class="text-end">
+                <a
+                  href="{{ site.Params.twitter }}?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-show-count="false"
+                ></a>
+              </div>
+
+              <a
+                class="twitter-timeline"
+                data-theme="light"
+                href="{{ site.Params.twitter }}?ref_src=twsrc%5Etfw"
+                data-chrome="nofooter noheader"
+              ></a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            <div class="text-center">
+              <small>Scroll for more</small>
+            </div>
+          {{ end -}}
+</div>
+</div>
+ <div class="sticky-top sticky-top-offset">     
+  <ol class="list-featured">
+
+          
+        </div>
+      </div>
+    </div>
+  </div>

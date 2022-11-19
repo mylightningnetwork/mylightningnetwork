@@ -1,0 +1,227 @@
+{{- define "main" }}
+
+  <!-- Content -->
+  <main role="main" class="site-content">
+    <div class="container">
+      <div
+        class="jumbotron jumbotron-fluid position-relative mb-3 bg-white pl-0 pt-0 pb-0"
+      >
+        <div class="h-100 tofront">
+          <div class="row justify-content-between">
+            <div class="col-md-6 pr-md-4 align-self-center pr-0 pt-4 pb-4">
+              <p class="text-uppercase font-weight-bold">
+                <span class="catlist">
+                  {{- range $name := .Params.category }}
+                    <a
+                      class="sscroll text-danger"
+                      href="/category/{{ lower $name }}"
+                      >{{ $name }}</a
+                    ><span class="sep">, </span>
+                  {{ end -}}
+                </span>
+              </p>
+              <h1 class="display-4 article-headline mb-4">
+                {{ .Title }}
+              </h1>
+              <div class="d-flex align-items-center">
+                <img
+                  class="rounded-circle"
+                  src="{{ site.Params.author_pic }}"
+                  alt="Sal"
+                  width="70"
+                />
+
+                <small class="ml-3">
+                  {{ site.Params.author }}
+                  <span
+                    ><a
+                      target="_blank"
+                      href="{{ site.Params.twitter }}"
+                      class="btn btn-outline-success btn-sm btn-round ml-1"
+                      >Follow</a
+                    ></span
+                  >
+                  <span class="text-muted d-block mt-1"
+                    >{{ .Date | time.Format ":date_long" }} ·
+                    <span class="reading-time"
+                      >{{ if gt .ReadingTime 1 }}
+                        {{ .ReadingTime }} minutes
+                      {{ else }}
+                        {{ .ReadingTime }} minute
+                      {{ end }}</span
+                    >
+                  </span>
+                </small>
+              </div>
+            </div>
+
+            {{- if .Params.thumbnail }}
+              <div class="col-md-6 align-self-center pr-0">
+                <img
+                  class="rounded"
+                  src="/assets/images/{{ .Params.thumbnail }}"
+                  alt="{{ .Title }}"
+                />
+              </div>
+            {{ end -}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg pt-4 pb-4">
+      <div class="row justify-content-center">
+        <!-- Share -->
+        <div class="col-lg-2 col-md-12 mb-4 pr-4">
+          <div class="sticky-top sticky-top-offset text-center">
+            <div class="text-muted">Share this</div>
+            <div class="share d-inline-block">
+              <!-- AddToAny BEGIN -->
+              <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+              </div>
+              <script
+                async
+                src="https://static.addtoany.com/menu/page.js"
+              ></script>
+              <!-- AddToAny END -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-8">
+          {{- if .Params.youtube_url }}
+            <div class="d-flex justify-content-center align-items-center">
+              <iframe
+                class="mb-8"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/{{ index (last 1 (split .Params.youtube_url "/")) 0 }}"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          {{ end -}}
+          {{- if .Params.audio_url }}
+            <audio
+              controls
+              preload="auto"
+              style="width: 100%"
+              class="mb-5 mt-3"
+            >
+              <source src="{{ .Params.audio_url }}" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          {{ end -}}
+
+
+          <!-- Article -->
+          <article class="article-post">
+            {{ .Content | safeHTML }}
+          </article>
+
+          <!-- Tags -->
+          <div class="mb-4">
+            <span class="taglist">
+              {{- range $name := .Params.tags }}
+                <a class="sscroll text-danger" href="/tags/{{ lower $name }}"
+                  >{{ $name }}</a
+                >
+              {{ end -}}
+            </span>
+          </div>
+
+          <!-- Mailchimp Subscribe Form -->
+
+          <!--
+          <div class="bg-lightblue border p-5">
+            <div class="row justify-content-between">
+              <div class="col-md-6 mb-md-0 mb-2">
+                <h5 class="font-weight-bold">Join Newsletter</h5>
+                Get the latest news right in your inbox. We never spam!
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <form
+                    action="index.html"
+                    method="post"
+                    name="mc-embedded-subscribe-form"
+                    class="wj-contact-form validate w-100"
+                    target="_blank"
+                    novalidate
+                  >
+                    <div class="mc-field-group">
+                      <input
+                        type="email"
+                        placeholder="Enter e-mail address"
+                        name="EMAIL"
+                        class="required email form-control w-100"
+                        id="mce-EMAIL"
+                        autocomplete="on"
+                        required
+                      />
+
+                      <button
+                        type="submit"
+                        value="Subscribe"
+                        name="subscribe"
+                        class="heart btn btn-success btn-block w-100 mt-2"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+
+          <!-- Author Box -->
+
+          <div class="row mt-5">
+            <div class="col-md-2 align-self-center">
+              <img
+                class="rounded-circle"
+                src="/assets/images/avatar1.jpg"
+                alt="Sal"
+                width="90"
+              />
+            </div>
+            <div class="col-md-10">
+              <h5 class="font-weight-bold">
+                Written by Sal
+                <span
+                  ><a
+                    target="_blank"
+                    href="{{ site.Params.twitter }}"
+                    class="btn btn-outline-success btn-sm btn-round ml-2"
+                    >Follow</a
+                  ></span
+                >
+              </h5>
+              {{ site.Params.author_bio }}
+            </div>
+          </div>
+
+          <!-- Comments -->
+
+          <div id="comments" class="mt-5">
+            {{ template "_internal/disqus.html" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aletbar Prev/Next -->
+    <div class="alertbar">
+      <div class="container">
+        <div class="row prevnextlinks small font-weight-bold"></div>
+      </div>
+    </div>
+  </main>
+{{ end -}}

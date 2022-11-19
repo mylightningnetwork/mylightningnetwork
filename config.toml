@@ -1,7 +1,7 @@
 ####################
 # hugo
 ####################
-baseURL = "https://mylightning.network"
+baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 title = "myLightning.Network"
@@ -15,7 +15,8 @@ enableGitInfo = true
 pygmentsCodefences = true
 pygmentsUseClasses = true
 disableHugoGeneratorInject = true
-assetDir = "static/assets"
+theme = "lite"
+
 
 [module]
 [module.hugoVersion]
@@ -41,8 +42,7 @@ disqusShortname = 'yourDisqusShortname'
   tag = 'tags'
 
 [outputs]
-  home          = ["html", "json"]
-  section          = ["html"]
+  home = ["HTML", "RSS", "JSON"]
 
 ####################
 # site params
@@ -76,11 +76,11 @@ weight = 1
 
 [[menu.main]]
 name = "WHAT WE DO"
-url = "/"
+url = "/whatwedo"
 weight = 2
 
 [[menu.main]]
-name = "Game: CBDCs & Bitcoin"
+name = "CBDCs"
 url = "/gametheory"
 weight = 3
 

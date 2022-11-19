@@ -1,0 +1,146 @@
+{{- define "main" }}
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 main-loop">
+          <h4 class="font-weight-bold spanborder">
+            <span>All Magazine</span>
+          </h4>
+
+          <div class="row">
+            {{- $paginator := .Paginate (where (where site.RegularPages "Section" "posts") "Params.category" "intersect" (slice "Magazine")) -}}
+            {{- range first 6 $paginator.Pages }}
+              <a
+                class="col-12 col-md-6 cardloop mb-5"
+                href="{{ .Params.youtube_url }}"
+                target="_blank"
+              >
+                {{- if .Params.thumbnail }}
+                  <div class="cardloop-img-wrapper mb-4">
+                    <img
+                      src="/assets/images/{{ .Params.thumbnail }}"
+                      alt="img"
+                      class="cardloop-img"
+                    />
+                  </div>
+                {{- end }}
+                <h2 class="h4 font-weight-bold text-dark mb-1">
+                  {{ .Title }}
+                </h2>
+                <div>
+                  <span class="text-black-50">Posted by:</span>
+                  <span class="text-dark">{{ site.Params.author }}</span>
+                </div>
+              </a>
+            {{- else }}
+              <div class="my-5 ml-5">
+                <span>No Magazines</span>
+              </div>
+            {{ end -}}
+            <div class="my-5">
+              {{ template "_internal/pagination.html" . }}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          {{- if site.Params.twitter }}
+            <div style="max-height: 560px; overflow-y: scroll">
+              <div class="text-end">
+                <a
+                  href="{{ site.Params.twitter }}?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-show-count="false"
+                ></a>
+              </div>
+
+              <a
+                class="twitter-timeline"
+                data-theme="light"
+                href="{{ site.Params.twitter }}?ref_src=twsrc%5Etfw"
+                data-chrome="nofooter noheader"
+              ></a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            <div class="text-center">
+              <small>Scroll for more</small>
+            </div>
+          {{ end -}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="block-heading">More Videos</h2>
+        </div>
+      </div>
+      <div class="gap"></div>
+      <div class="row gutter-30">
+        {{ $postsMagazine := where site.RegularPages "Section" "posts" }}
+        {{ $postsMagazine = where $postsMagazine "Params.category" "intersect" (slice "Magazine") }}
+        {{- range first 3 $postsMagazine }}
+          <div class="col-md-4 cardloop">
+            <div
+              class="magazine-single"
+            >
+              {{ if .Params.thumbnail }}
+                <div class="magazine-thumb cardloop-img-wrapper">
+                  <a href="{{ .Params.youtube_url }}" class="title">
+                    <img
+                      src="/assets/images/{{ .Params.thumbnail }}"
+                      alt="{{ .Title }}"
+                      class="cardloop-img"
+                    />
+                  </a>
+                </div>
+              {{ end -}}
+              <div class="magazine-content">
+                <h3>
+                  <a href="{{ .Params.youtube_url }}" class="title"
+                    >{{ .Title }}</a
+                  >
+                </h3>
+                <p class="designation">
+                  {{ .Date | time.Format ":date_long" }}
+                </p>
+              </div>
+            </div>
+          </div>
+        {{- else }}
+          <div class="my-5 ml-5">
+            <span>No Post</span>
+          </div>
+        {{ end -}}
+      </div>
+    </div>
+  </section>
+  <!-- ./section -->
+  <style>
+    .cardloop:hover .cardloop-img {
+      transform: scale(1.25);
+    }
+    .cardloop-img-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: 58%;
+    }
+    .cardloop-img {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+  </style>
+{{ end -}}

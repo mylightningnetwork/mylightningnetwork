@@ -1,0 +1,46 @@
+{{- define "main" -}}
+
+  <main role="main" class="site-content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h3 class="font-weight-bold spanborder">
+            <span>
+              {{ .Title }}
+            </span>
+          </h3>
+          <div class="page-content">
+            {{ $counter := 0 }}
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+              {{ $counter = add $counter 1 }}
+              <div class="border-secondary mb-6 border-b pb-6">
+                <div>
+                  <div class="mb-4" style="font-size: 2rem;">
+                    <strong>
+                      {{ $counter }}.
+                      <a href="/tags/{{ $name | urlize }}"
+                        >{{ $name | humanize }}</a
+                      >
+                      [{{ $taxonomy.Count }}]
+                    </strong>
+                  </div>
+                  <ol>
+                    {{ range $taxonomy }}
+                      <li>
+                        <small>{{ .Date.Format "02/01/2006" }}</small>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                      </li>
+                    {{ end }}
+                  </ol>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-md-4">
+          {{- partial "sidebar-featured.html" . -}}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

@@ -1,0 +1,62 @@
+{{- define "main" }}
+
+  <!-- Content -->
+  <main role="main" class="site-content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h3 class="font-weight-bold spanborder">
+            <span>
+              {{- if eq .Kind "term" }}
+                Tags - {{ .Title }}:
+                {{ .Paginator.PageNumber }}
+              {{- else }}
+                {{ .Title }}
+              {{ end -}}
+            </span>
+          </h3>
+          <div class="page-content">
+            <ol class="list-featured">
+              {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}
+              {{- range $paginator.Pages }}
+                <li class="mb-4">
+                  <span>
+                    <a href="{{ .RelPermalink }}">
+                      <h6 class="font-weight-bold">
+                        <p class="text-dark">{{ .Title }}</p>
+                      </h6>
+                    </a>
+                    {{- if .Params.audio_url }}
+                      <audio controls="" preload="metadata">
+                        <source
+                          src="{{ .Params.audio_url }}"
+                          type="audio/mpeg"
+                        />
+                        Your browser does not support the audio element.
+                      </audio>
+                    {{ end -}}
+                    <p class="text-muted">
+                      {{ .Date | time.Format ":date_long" }}
+                    </p>
+                  </span>
+                </li>
+              {{- else }}
+                <div class="my-5 ml-5">
+                  <span>No Posts</span>
+                </div>
+              {{ end -}}
+            </ol>
+            <div class="my-5">
+              {{ template "_internal/pagination.html" . }}
+            </div>
+
+            <!-- Comments -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          {{- partial "sidebar-featured.html" . -}}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end -}}
