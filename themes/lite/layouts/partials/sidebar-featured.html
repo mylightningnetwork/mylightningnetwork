@@ -1,25 +1,7 @@
 <div class="sticky-top sticky-top-offset">
-  <h4 class="font-weight-bold spanborder"><span>Podcasts</span></h4>
-  <ol class="list-featured">
-    {{ $postsPodcast := where site.RegularPages "Section" "posts" }}
-    {{ $postsPodcast = where $postsPodcast "Params.category" "intersect" (slice "Podcast") }}
-    {{- range first 6 $postsPodcast }}
-      <li class="mb-4">
-        <a href="{{ .Params.youtube_url }}">
-          <span>
-            <h6 class="font-weight-bold">
-              <p class="text-dark">{{ .Title }}</p>
-            </h6>
-          </span>
-        </a>
-      </li>
-    {{ end -}}
-  </ol>
-  <p class="small text-center">
-    <a href="/category/podcast/">Show all episodes...</a>
-  </p>
+  <h4 class="font-weight-bold spanborder"><span>Twitter Feed</span></h4>
   {{- if site.Params.twitter }}
-            <div style="max-height: 560px; overflow-y: scroll">
+            <div style="max-height: 490px; overflow-y: scroll">
               <div class="text-end">
                 <a
                   href="{{ site.Params.twitter }}?ref_src=twsrc%5Etfw"
@@ -44,12 +26,26 @@
               <small>Scroll for more</small>
             </div>
           {{ end -}}
-</div>
-</div>
- <div class="sticky-top sticky-top-offset">     
+  <h4 class="font-weight-bold spanborder"><span>Podcasts</span></h4>
   <ol class="list-featured">
-
-          
+    {{ $postsPodcast := where site.RegularPages "Section" "posts" }}
+    {{ $postsPodcast = where $postsPodcast "Params.category" "intersect" (slice "Podcast") }}
+    {{- range first 6 $postsPodcast }}
+      <li class="mb-4">
+        <a href="{{ .Params.youtube_url }}">
+          <span>
+            <h6 class="font-weight-bold">
+              <p class="text-dark">{{ .Title }}</p>
+            </h6>
+          </span>
+        </a>
+      </li>
+    {{ end -}}
+  </ol>
+  <p class="small text-center">
+    <a href="/category/podcast/">Show all episodes...</a>
+  </p>
+       
         </div>
       </div>
     </div>
