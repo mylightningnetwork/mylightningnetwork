@@ -22,10 +22,10 @@ formspree: "mpzbpgww"
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFSc4n108Q&#x2F;view?utm_content=DAFSc4n108Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a>
 
- </html>
- 
+
+ </br>
 </br>
-### Contact Us:
+<h3> Contact Us: </h3>
   If you have any specific queries, Please send your message to myLightning.network
 <form action="https://formspree.io/f/xaykvjln" method="POST">
 <p class="mb-4"> We will reply as soon as possible!</p>
@@ -41,3 +41,4 @@ formspree: "mpzbpgww"
 <input class="btn btn-success" type="submit" value="Send">
 </form>
 
+ </html>
