@@ -1,5 +1,5 @@
 ---
-title: "Why & How to Join Network?"
+title: " "
 date: 2022-08-09T20:01:06+07:00
 draft: false
 seo_description: ""
@@ -10,11 +10,23 @@ thumbnail: "posts/example.jpg"
 slug: "join"
 formspree: "mpzbpgww"
 ---
-At mylightning.network, we believe self-custodial investing with bitcoin is the future. Lightning network capital markets enable this unique feature of investing, lending and borrowing without trusting your funds with counterparty risk. The history of money is being rewritten by big governments using Central Bank Digital Currencies (CBDC's); therefore, it will be vital for investors to comprehend the insights and analytics about the money you can own, the money you can invest and earn without a centralized mediator inbetween.
 
-We present Lightning Capital Markets Insights and Analytics through lens of Game Theory to make your hard earned bitcoin's work for you even while you are sleeping :) in non-custodial fashion.
+<html>
+  
+  <div style="position: relative; width: 100%; height: 0; padding-top: 56.3415%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFSc4n108Q&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFSc4n108Q&#x2F;view?utm_content=DAFSc4n108Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+  
+<body>
+        <h1>Have a Query :</h1>
+  </body>
 
-We welcome you to join our journey with us  and contact us below by sending any query !! 
+We welcome you, to send us your queries  !! 
 Keep in touch !
 
 <form action="https://formspree.io/f/xaykvjln" method="POST">
@@ -30,4 +42,4 @@ Keep in touch !
 <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>
 <input class="btn btn-success" type="submit" value="Send">
 </form>
-
+ </html>
