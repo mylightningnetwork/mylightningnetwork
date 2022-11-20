@@ -20,8 +20,7 @@ formspree: "mpzbpgww"
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFSc4n108Q&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFSc4n108Q&#x2F;view?utm_content=DAFSc4n108Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
-  
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFSc4n108Q&#x2F;view?utm_content=DAFSc4n108Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a>
 <body>
         <h3><u>Have a Query :</u></h3>
   </body>
