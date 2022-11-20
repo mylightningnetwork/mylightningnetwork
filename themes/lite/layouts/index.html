@@ -5,13 +5,13 @@
         <div class="h-100 tofront pl-4 pr-0">
           <div class="row justify-content-between">
             <div class="col-md-6 pr-lg-4 align-self-center pt-6 pb-6">
-              <h1 class="mb-3">Lorem ipsum dolor sit amet.</h1>
+              <h1 class="mb-3">To Whom & Where should I lend my Bitcoin?</h1>
               <p class="lead mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                ut arcu suscipit, tempus ante sed, dignissim lorem. Curabitur at
-                posuere.
+                By joining mylightning.network with one-time fee,
+                Get Lifetime Lightning Market Insights & Analytics
+                With added benefits...
               </p>
-              <a href="/category/magazine" class="btn btn-dark">Magazine</a>
+              <a href="/category/magazine" class="btn btn-dark">Find out how?</a>
             </div>
             <div
               class="col-md-6 d-none d-md-block pr-0"
@@ -27,9 +27,9 @@
 
       <div class="row mt-3">
         <div class="col-md-8 main-loop">
-          <h4 class="font-weight-bold spanborder">
+          <h3 class="font-weight-bold spanborder">
             <span>Lightning Markets: Insights & Analytics</span>
-          </h4>
+          </h3>
 
           {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}
           {{- range first 6 $paginator.Pages }}
@@ -91,9 +91,12 @@
     </div>
  <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
   <div class="container pt-4">
-     <h4 class="font-weight-bold spanborder">
+       <h3 class="font-weight-bold spanborder">
             <span>Game: CBDCs & Bitcoin</span>
-          </h4>
+          </h3>
+
+          {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}
+          {{- range first 6 $paginator.Pages }}
     <div class="row remove-site-content-margin">
     {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}
     {{- range first 4 $paginator.Pages }}
